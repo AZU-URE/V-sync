@@ -27,7 +27,14 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact-us">Contact</a></li>
-            <li><button class="btn-take-test">Take test</button></li>
+            <li>
+              <button
+                class="btn-take-test"
+                onclick="window.location.href = 'participant1.html';"
+              >
+                Take test
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -40,7 +47,12 @@
           Test Your's and your partner's Voice Sync with
           <span class="vsync">V-sync</span>
         </h1>
-        <button class="btn-take-test">Test Now</button>
+        <button
+          class="btn-take-test"
+          onclick="window.location.href = 'participant1.html';"
+        >
+          Test Now
+        </button>
       </div>
       <div class="home-img">
         <img src="./images/home-img.png" alt="couple with mic" />
@@ -49,15 +61,66 @@
 
     <!-- about section -->
     <div class="about flex" id="about">
-      <div class="about-I1"></div>
-      <div class="about-I2"></div>
-      <div class="about-I3"></div>
+      <div class="about-card">
+        <h5 class="about-title">Improved Communication</h5>
+        <p class="about-para">
+          Synced voices leads to improved communication.
+        </p>
+        <img
+          src="./images/communication.png"
+          alt="couple-communicating"
+          class="about-img"
+        />
+      </div>
+
+      <div class="about-card">
+        <h5 class="about-title">Conflict Resolution</h5>
+        <p class="about-para">
+          Synced voices are likely to be on same page so lesser conflicts.
+        </p>
+        <img
+          src="./images/conflict.png"
+          alt="couple-having-conflict"
+          class="about-img"
+        />
+      </div>
+
+      <div class="about-card">
+        <h5 class="about-title">Enhances intimacy</h5>
+        <p class="about-para">
+          Synced voices creates a sense of intimacy and closeness
+        </p>
+        <img
+          src="./images/intimacy.png"
+          alt="couple-intimate"
+          class="about-img"
+        />
+      </div>
     </div>
 
     <!-- button + quote:take-test section-->
-    <div class="take-test"></div>
+    <div class="take-test flex">
+      <div>
+        <h1 class="test-heading">
+          Know Your
+          <span>Sync-Score</span>
+          Today
+        </h1>
+      </div>
+      <div>
+        <button
+          class="btn-take-test"
+          onclick="window.location.href = 'participant1.html';"
+        >
+          Take test
+        </button>
+      </div>
+    </div>
 
     <!-- footer :contact-us section-->
-    <div class="contact-us" id="contact-us"></div>
+    <div class="contact-us flex" id="contact-us">
+      <p>Copyright 2023. Made by Garima.</p>
+      <p class="email">mangalgarima1711@gmail.com</p>
+    </div>
   </body>
 </html>

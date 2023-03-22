@@ -55,6 +55,7 @@ nav li a {
   text-decoration: none;
   margin-left: 20px;
   font-size: 18px;
+  font-weight: 500;
 }
 nav li a:hover {
   color: white;
@@ -121,13 +122,71 @@ nav li a:hover {
   padding: 100px;
 }
 
+.about-card {
+  text-align: center;
+}
+
+.about-title {
+  font-family: 'poppins';
+  font-weight: 400;
+  font-size: 23px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.about-para {
+  font-family: 'poppins';
+  font-weight: 400;
+  color: #5d4e55;
+  width: 300px;
+  margin: 20px;
+}
+
+.about-img {
+  width: 200px;
+}
+
 /* take-test */
 .take-test {
   background-color: var(--extra-color);
-  height: 300px;
+  height: 100px;
+  padding: 100px;
+}
+
+.test-heading {
+  text-align: center;
+  font-family: var(--font);
+  font-weight: 600;
+  color: white;
+  font-size: 50px;
+}
+.test-heading span {
+  color: #f875b2;
+}
+.test-heading span:hover {
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+.take-test button {
+  text-align: center;
+  padding: 30px 60px;
+  font-size: 20px;
+  margin-right: 36px;
 }
 /* contact-us */
 .contact-us {
-  background-color: white;
-  height: 300px;
+  background-color: var(--navbar-color);
+
+  height: fit-content;
+  padding: 1px;
+}
+
+.contact-us p {
+  padding: 0px 20px;
+}
+
+.email {
+  text-align: right;
 }
