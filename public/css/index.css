@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #f875b2;
+  --secondary-color: #ffeaea;
+  --button-color: #9a208c;
+  --extra-color: #facccc;
+  --font: 'Alkatra', cursive;
+  --navbar-color: #59f1e7;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--navbar-color);
+  height: 100px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+nav img {
+  width: 110px;
+  padding: 14px 16px;
+}
+.flex-1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.nav-ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  float: right;
+}
+
+nav li {
+  float: left;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+nav li a:hover {
+  color: white;
+}
+
+.btn-take-test {
+  padding: 14px 30px;
+  margin: 10px;
+  background-color: #9a208c;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 14px;
+  align-self: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-take-test:hover {
+  background-color: #ba1aa8;
+}
+
+/* home */
+
+.home {
+  background-color: var(--primary-color);
+  height: 350px;
+  padding: 100px;
+}
+
+.home-heading {
+  font-size: 25px;
+  color: white;
+  font-family: var(--font);
+  text-align: center;
+  width: 450px;
+  position: relative;
+  /* margin: 50px; */
+}
+
+.vsync {
+  color: #ba1aa8;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.home-img {
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  top: -70px;
+  /* margin: 50px; */
+}
+
+.home-img img {
+  width: 500px;
+}
+
+/* about */
+.about {
+  background-color: var(--secondary-color);
+  height: 350px;
+  padding: 100px;
+}
+
+/* take-test */
+.take-test {
+  background-color: var(--extra-color);
+  height: 300px;
+}
+/* contact-us */
+.contact-us {
+  background-color: white;
+  height: 300px;
+}
