@@ -1,0 +1,86 @@
+body {
+  background-color: #facccc;
+  margin: 0;
+  padding: 0;
+}
+/* heading section */
+.vsync {
+  font-family: 'Alkatra', cursive;
+  font-weight: 700;
+  text-align: center;
+  color: #9a208c;
+}
+
+.vsync h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+/* form section */
+.forms {
+  padding: 20px;
+}
+.forms h3 {
+  font-size: 30px;
+  font-family: 'poppins';
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+label,
+input {
+  margin-bottom: 15px;
+}
+
+label {
+  font-family: 'poppins';
+}
+
+input {
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+input[type='submit'] {
+  padding: 14px 30px;
+  border-radius: 20px;
+  background-color: #9a208c;
+  color: white;
+  margin-top: 20px;
+  font-family: 'poppins';
+  font-size: 15px;
+  margin-left: 0;
+}
+
+.recorder {
+  width: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+audio {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.audio_rec {
+  margin: auto;
+  padding: 10px;
+}
+
+.waveform_heading {
+  font-family: 'poppins';
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.waveform {
+  /* background-color: #9a208c; */
+  /* margin: 20px; */
+  width: 350px;
+  padding: 20px;
+}

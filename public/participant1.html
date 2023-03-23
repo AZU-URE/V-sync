@@ -4,8 +4,204 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600;700&family=Poppins:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/participant1.css" />
     <link rel="stylesheet" href="./css/index.css" />
+
     <title>V-sync</title>
   </head>
-  <body></body>
+  <body>
+    <div class="vsync">
+      <h1>V-sync</h1>
+    </div>
+    <!-- forms -->
+    <div class="flex forms">
+      <div>
+        <h3>Participant 1</h3>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <br />
+
+          <label for="age-years">Age (years):</label>
+          <input type="number" id="age-years" name="age-years" />
+          <label for="age-months">Age (months):</label>
+          <input type="number" id="age-months" name="age-months" />
+          <br />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Other</option>
+          </select>
+          <br />
+
+          <label for="relationship-duration">
+            Duration of relationship with other participant (months):
+          </label>
+          <input
+            type="number"
+            id="relationship-duration"
+            name="relationship-duration"
+          />
+          <br />
+
+          <label for="covid-history">COVID-19 History:</label>
+          <input type="radio" id="covid-yes" name="covid-history" value="yes" />
+          <label for="covid-yes">Yes</label>
+          <input type="radio" id="covid-no" name="covid-history" value="no" />
+          <label for="covid-no">No</label>
+          <br />
+
+          <label for="smoking-habit">Habit of smoking:</label>
+          <input
+            type="radio"
+            id="smoking-yes"
+            name="smoking-habit"
+            value="yes"
+          />
+          <label for="smoking-yes">Yes</label>
+          <input type="radio" id="smoking-no" name="smoking-habit" value="no" />
+          <label for="smoking-no">No</label>
+          <br />
+
+          <label for="heart-medications">Heart-related medications:</label>
+          <input
+            type="radio"
+            id="medications-yes"
+            name="heart-medications"
+            value="yes"
+          />
+          <label for="medications-yes">Yes</label>
+          <input
+            type="radio"
+            id="medications-no"
+            name="heart-medications"
+            value="no"
+          />
+          <label for="medications-no">No</label>
+          <br />
+          <!-- audio element will generate here -->
+          <div id="audio_rec1" class="audio_rec">
+            <label for="audio_1">Record Voice:</label>
+            <img
+              src="./images/mic.png"
+              alt="recorder"
+              id="audio_1"
+              class="recorder"
+              onclick="start_audio_Recording(this)"
+            />
+            <br />
+          </div>
+          <!-- waveform -->
+
+          <div class="waveform" id="waveform_1">
+            <h4 class="waveform_heading">Generated Waveform</h4>
+          </div>
+
+          <input type="submit" value="Submit" id="participant1" />
+        </form>
+      </div>
+
+      <div>
+        <h3>Participant 2</h3>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <br />
+
+          <label for="age-years">Age (years):</label>
+          <input type="number" id="age-years" name="age-years" />
+          <label for="age-months">Age (months):</label>
+          <input type="number" id="age-months" name="age-months" />
+          <br />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Other</option>
+          </select>
+          <br />
+
+          <label for="relationship-duration">
+            Duration of relationship with other participant (months):
+          </label>
+          <input
+            type="number"
+            id="relationship-duration"
+            name="relationship-duration"
+          />
+          <br />
+
+          <label for="covid-history">COVID-19 History:</label>
+          <input type="radio" id="covid-yes" name="covid-history" value="yes" />
+          <label for="covid-yes">Yes</label>
+          <input type="radio" id="covid-no" name="covid-history" value="no" />
+          <label for="covid-no">No</label>
+          <br />
+
+          <label for="smoking-habit">Habit of smoking:</label>
+          <input
+            type="radio"
+            id="smoking-yes"
+            name="smoking-habit"
+            value="yes"
+          />
+          <label for="smoking-yes">Yes</label>
+          <input type="radio" id="smoking-no" name="smoking-habit" value="no" />
+          <label for="smoking-no">No</label>
+          <br />
+
+          <label for="heart-medications">Heart-related medications:</label>
+          <input
+            type="radio"
+            id="medications-yes"
+            name="heart-medications"
+            value="yes"
+          />
+          <label for="medications-yes">Yes</label>
+          <input
+            type="radio"
+            id="medications-no"
+            name="heart-medications"
+            value="no"
+          />
+          <label for="medications-no">No</label>
+          <br />
+          <!-- audio element will generate here -->
+          <div id="audio_rec2" class="audio_rec">
+            <label for="audio_2">Record Voice:</label>
+            <img
+              src="./images/mic.png"
+              alt="recorder"
+              id="audio_2"
+              class="recorder"
+              onclick="start_audio_Recording(this)"
+            />
+            <br />
+          </div>
+          <!-- waveform -->
+
+          <div class="waveform" id="waveform_2">
+            <h4 class="waveform_heading">Generated Waveform</h4>
+          </div>
+
+          <input type="submit" value="Submit" id="participant2" />
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- js -->
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+  <script src="./js/record.js"></script>
 </html>
