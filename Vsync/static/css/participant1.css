@@ -51,7 +51,6 @@ input[type='submit'] {
   margin-top: 20px;
   font-family: 'poppins';
   font-size: 15px;
-  margin-left: 0;
 }
 
 .recorder {
@@ -84,3 +83,26 @@ audio {
   width: 350px;
   padding: 20px;
 }
+
+.calc-div {
+  text-align: center;
+  padding: 30px 50%;
+}
+
+.calc-btn {
+  margin: 30px 50%;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: #49209a;
+}
+
+.calc-div button:hover {
+  background-color: #7131f1;
+}
+
+.btn {
+  margin-right: 50%;
+  margin-left: 50%;
+}
+
+/* -----------------------------------------result css ---------------------------------------- */

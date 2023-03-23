@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     <!-- css -->
-    <link rel="stylesheet" href="./css/participant1.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/participant1.css" />
 
     <title>V-sync</title>
   </head>
@@ -93,7 +93,7 @@
           <div id="audio_rec1" class="audio_rec">
             <label for="audio_1">Record Voice:</label>
             <img
-              src="./images/mic.png"
+              src="static/images/mic.png"
               alt="recorder"
               id="audio_1"
               class="recorder"
@@ -107,7 +107,7 @@
             <h4 class="waveform_heading">Generated Waveform</h4>
           </div>
 
-          <input type="submit" value="Submit" id="participant1" />
+          <input type="submit" value="Submit" id="participant1" class="btn" />
         </form>
       </div>
 
@@ -181,7 +181,7 @@
           <div id="audio_rec2" class="audio_rec">
             <label for="audio_2">Record Voice:</label>
             <img
-              src="./images/mic.png"
+              src="static/images/mic.png"
               alt="recorder"
               id="audio_2"
               class="recorder"
@@ -195,13 +195,22 @@
             <h4 class="waveform_heading">Generated Waveform</h4>
           </div>
 
-          <input type="submit" value="Submit" id="participant2" />
+          <input type="submit" value="Submit" id="participant2" class="btn" />
         </form>
       </div>
+    </div>
+
+    <div class="calc-div">
+      <button
+        class="btn-take-test calc-btn"
+        onclick="location.href = '/almostThere'"
+      >
+        Calculate
+      </button>
     </div>
   </body>
 
   <!-- js -->
   <script src="https://unpkg.com/wavesurfer.js"></script>
-  <script src="./js/record.js"></script>
+  <script src="static/js/record.js"></script>
 </html>

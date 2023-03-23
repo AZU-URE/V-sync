@@ -12,15 +12,15 @@
       rel="stylesheet"
     />
     <!-- css -->
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>V-sync</title>
+    <link rel="stylesheet" href="static/css/index.css" />
+    <title>Vsync</title>
   </head>
   <body>
     <!-- nav bar: home,about,contact us, take the test(button) -->
     <nav class="navbar">
       <!-- <div class="nav-h3"><h3>Vsync</h3></div> -->
       <div class="flex">
-        <div class="nav-img flex-1"><img src="./images/logo.png" /></div>
+        <div class="nav-img flex-1"><img src="static/images/logo.png" /></div>
 
         <div class="flex-1">
           <ul class="nav-ul">
@@ -30,7 +30,7 @@
             <li>
               <button
                 class="btn-take-test"
-                onclick="window.location.href = 'participant1.html';"
+                onclick="location.href = '/candidate'"
               >
                 Take test
               </button>
@@ -47,15 +47,12 @@
           Test Your's and your partner's Voice Sync with
           <span class="vsync">V-sync</span>
         </h1>
-        <button
-          class="btn-take-test"
-          onclick="window.location.href = 'participant1.html';"
-        >
+        <button class="btn-take-test" onclick="location.href = '/candidate'">
           Test Now
         </button>
       </div>
       <div class="home-img">
-        <img src="./images/home-img.png" alt="couple with mic" />
+        <img src="static/images/home-img.png" alt="couple with mic" />
       </div>
     </div>
 
@@ -67,7 +64,7 @@
           Synced voices leads to improved communication.
         </p>
         <img
-          src="./images/communication.png"
+          src="static/images/communication.png"
           alt="couple-communicating"
           class="about-img"
         />
@@ -79,7 +76,7 @@
           Synced voices are likely to be on same page so lesser conflicts.
         </p>
         <img
-          src="./images/conflict.png"
+          src="static/images/conflict.png"
           alt="couple-having-conflict"
           class="about-img"
         />
@@ -91,7 +88,7 @@
           Synced voices creates a sense of intimacy and closeness
         </p>
         <img
-          src="./images/intimacy.png"
+          src="static/images/intimacy.png"
           alt="couple-intimate"
           class="about-img"
         />
@@ -108,10 +105,7 @@
         </h1>
       </div>
       <div>
-        <button
-          class="btn-take-test"
-          onclick="window.location.href = 'participant1.html';"
-        >
+        <button class="btn-take-test" onclick="location.href = '/candidate'">
           Take test
         </button>
       </div>
